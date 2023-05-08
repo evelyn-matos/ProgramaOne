@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #E5E5E5;
+    max-height: 100vh;
+    padding: 20px 20px 20px 20px;
+    
+
+}
+
+.inputArea{
+   
+    flex: 1;
+    display: flex;
+}
+
+
+
+
+.menuArea {
+    width: 100px;
+    height: 350px;
+
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    
+    
+}
+
+.logoArea img {
+    width: 25px;
+    height: 30px;
+
+    cursor: pointer;
+
+    
+}
+
+
+
+.buttonIput{
+    flex: 1;
+    
+    margin: 50px 50px 0px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.buttonIput textarea {
+    outline: none;
+    border: 0;
+    background: none;
+    
+
+    font-size: 32px;
+    color: #0A3871;
+    font-weight: 400;
+    
+}
+
+
+
+::-webkit-input-placeholder {
+    color: #0A3871;
+    font-weight: 400;
+}
+
+::-moz-placeholder{
+    color: #0A3871;
+    font-weight: 400;
+}
+
+::-ms-input-placeholder{
+    color: #0A3871;
+    font-weight: 400;
+}
+
+
+
+/* Area de Output Msg Criptografada */
+
+
+.outputArea{
+    width: 350px;
+    height: calc(100vh - 40px);
+    max-height: 944px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 32px;
+    background-color: #FFFFFF;
+}
+
+.outputArea textarea {
+    background: none;
+    align-self: center;
+    margin-top: 30px;
+    color: #495057;
+    outline: none;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    display: none;
+}
+
+.nenhumaMsgEncontrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nenhumaMsgEncontrada img {
+    width: 300px;
+    height: auto;
+    
+}
+
+.msgInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.msgInfo span{
+    
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.msgInfo p {
+
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #495057;
+
+}
+
+
+
+
+
+/*Botões de Ação*/
+
+
+.buttonIput span {
+    display: flex;
+    align-self: flex-start;
+
+    margin-top: 20px;   
+}
+
+.buttonIput span p {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #495057;
+}
+
+.buttonsArea{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+button{
+    width: 250px;
+    padding: 15px 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    
+    margin-right: 20px;
+
+    
+    
+    
+}
+
+.criptografar{
+    background-color: blue;
+    color: #FFFFFF;
+}
+
+.descriptografar {
+    background-color: #D8DFE8;
+    border: 1px solid blue;
+}
+
+.copiar {
+    
+    margin: 0;
+    margin-top: 120px;
+    background-color: #D8DFE8;
+    border: 1px solid blue;
+    display: none;
+}

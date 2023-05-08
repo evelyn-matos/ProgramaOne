@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Decoficador</title>
+</head>
+<body>
+    <section class="inputArea">
+        <header class="menuArea">
+            <div class="logoArea">
+                <img src="./assets/LogoVector.png" alt="Logo da Alura">
+            </div>
+        </header>
+        <div class="buttonIput">
+            <textarea name="text" id="msgdeInput" cols="35" rows="20" placeholder="Digite o seu Texto"></textarea>
+            <span>
+                <img src="./assets/VectorAtt.png" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </span>
+            <div class="buttonsArea">
+                <button class="criptografar" onclick="handleCriptografar()">Criptografar</button>
+                <button class="descriptografar" onclick="handleDescriptografar()">Descriptografar</button>
+            </div>
+        </div>  
+    </section>
+    
+    <section class="outputArea">
+        <div class="nenhumaMsgEncontrada">
+            <img src="./assets/nenhumaMensagem.svg" alt="">
+            <div class="msgInfo">
+                <span>Nenhuma Mensagem Encontrada</span>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+        <textarea name="text" id="msgOutput" cols="20" rows="15" disabled></textarea>
+        <button class="copiar" onclick="handleCopyMsg()">Copiar</button>
+    </section>
+</body>
+</html>
