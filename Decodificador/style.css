@@ -42,9 +42,10 @@ body {
     height: 30px;
 
     cursor: pointer;
-
+    
     
 }
+
 
 
 
@@ -125,12 +126,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: myTransition 1s ease;
+    
 }
 
 .nenhumaMsgEncontrada img {
     width: 300px;
     height: auto;
     
+}
+
+@keyframes myTransition {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 10;
+    }
 }
 
 .msgInfo{
@@ -161,7 +174,12 @@ body {
 }
 
 
-
+.msgCopiada{
+    display: none;
+    position: absolute;
+    color: blue;
+    font-weight: bold;
+}
 
 
 /*Botões de Ação*/
@@ -202,25 +220,36 @@ button{
     margin-right: 20px;
 
     
-    
-    
-}
-
-.criptografar{
-    background-color: blue;
-    color: #FFFFFF;
-}
-
-.descriptografar {
     background-color: #D8DFE8;
     border: 1px solid blue;
+    
+}
+
+.criptografar:hover{
+
+    background-color: blue;
+    color: #FFFFFF;
+    transition-duration: 1s;
+}
+
+.descriptografar:hover {
+    background-color: blue;
+    color: #FFFFFF;
+    transition-duration: 1s;
 }
 
 .copiar {
     
     margin: 0;
     margin-top: 120px;
-    background-color: #D8DFE8;
-    border: 1px solid blue;
     display: none;
+
+    
 }
+
+.copiar:hover{
+    background-color: blue;
+    color: #FFFFFF;
+    transition-duration: 1s;
+}
+

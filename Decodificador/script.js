@@ -6,24 +6,36 @@ function handleCriptografar(){
     let nenhumaMsgEncontrada = document.querySelector('.nenhumaMsgEncontrada');
     let msgOutput = document.querySelector('#msgOutput');
     let buttonCopy = document.querySelector('.copiar');
+    let msgCopiada = document.querySelector('.msgCopiada')
+
+    msgCopiada.style.display = 'none';
 
     if (msgOutput.value !== ''){
         var textarea = document.querySelector('#msgOutput');
         textarea.removeChild(textarea.firstChild)
+
+       
     }
     
-    if (msgInput == '' && msgInput.value == ''){
+    if (msgInput == '' && msgOutput.value == ''){
 
-        alert('Digite sua mensagem para criptografar')
         
         nenhumaMsgEncontrada.style.display = 'flex';
         msgOutput.style.display = 'none';
         buttonCopy.style.display = 'none';
+        
+        nenhumaMsgEncontrada.animate([
+            {opacity: '0'},
+            {opacity: '10'},
+            
+        ],{
+            duration: 1000,
+            interations: 1
+        })
 
     }else{
 
-        
-
+    
         nenhumaMsgEncontrada.style.display = 'none';
         msgOutput.style.display = 'block';
         buttonCopy.style.display = 'block';
@@ -85,6 +97,9 @@ function handleDescriptografar() {
     let nenhumaMsgEncontrada = document.querySelector('.nenhumaMsgEncontrada');
     let msgOutput = document.querySelector('#msgOutput');
     let buttonCopy = document.querySelector('.copiar');
+    let msgCopiada = document.querySelector('.msgCopiada')
+
+    msgCopiada.style.display = 'none';
 
     if (msgOutput.value !== ''){
         var textarea = document.querySelector('#msgOutput');
@@ -92,13 +107,19 @@ function handleDescriptografar() {
     }
 
     if (msgInput == '' && msgOutput.value == ''){
-
-        alert('Digite sua mensagem para Descriptografar')
-
-        
+   
         nenhumaMsgEncontrada.style.display = 'flex';
         msgOutput.style.display = 'none';
         buttonCopy.style.display = 'none';
+
+        nenhumaMsgEncontrada.animate([
+            {opacity: '0'},
+            {opacity: '10'},
+            
+        ],{
+            duration: 1000,
+            interations: 1
+        })
 
     }else{
 
@@ -116,27 +137,28 @@ function handleDescriptografar() {
 
 }
 
-//Função para copiar a mensagem e zerar os campos
+//Função para copiar a mensagem 
 
 function handleCopyMsg(){
 
-    let nenhumaMsgEncontrada = document.querySelector('.nenhumaMsgEncontrada');
-    let buttonCopy = document.querySelector('.copiar');
+
+    let msgCopiada = document.querySelector('.msgCopiada')
 
     let msgOutput = document.querySelector('#msgOutput').value
     navigator.clipboard.writeText(msgOutput)
 
    
+    msgCopiada.style.display = 'flex';
+    msgCopiada.animate([
+        {opacity: '0'},
+        {opacity: '10'},
+        
+    ],{
+        duration: 1000,
+        interations: 1
+    })
+      
     
-    document.querySelector('#msgdeInput').value = '';
-    document.querySelector('#msgOutput').style.display = 'none'
-
-    nenhumaMsgEncontrada.style.display = 'flex';
-    buttonCopy.style.display = 'none'
-
-
-    var textarea = document.querySelector('#msgOutput');
-        textarea.removeChild(textarea.firstChild)
 }
 
 
