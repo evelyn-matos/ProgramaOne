@@ -35,7 +35,7 @@ function handleCriptografar(){
 
     }else{
 
-    
+     
         nenhumaMsgEncontrada.style.display = 'none';
         msgOutput.style.display = 'block';
         buttonCopy.style.display = 'block';
